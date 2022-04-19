@@ -1,0 +1,206 @@
+:root{
+
+    /*primary colors*/
+
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    /*secondary colors*/
+
+    --Transparent-white-paragraphs-: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+
+    /*fonts*/
+    --font-Lexend-Deca: 'Lexend Deca', sans-serif;
+    --font-Big-Shoulders-Display: 'Big Shoulders Display', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.main-container h1{
+    color: var(--Very-light-gray-background-headings-buttons);
+    font-family:var(--font-Big-Shoulders-Display);
+    font-size: 32px;
+    padding-right: 130px;
+    text-transform: uppercase;
+}
+
+.main-container p{
+    color: var(--Transparent-white-paragraphs-);
+    font-family: var(--font-Lexend-Deca);
+    font-size: 14px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 25px;
+    text-align: left;
+}
+
+.main-container button{
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    border: none;
+    background: var(--Very-light-gray-background-headings-buttons);
+    font-family: var(--font-Lexend-Deca);
+    margin-right: 100px;
+    margin-top: 30px;
+}
+
+.first-div{
+    margin-top: 622px;
+    width: 300px;
+    height: 360px;
+    background-color: var(--Bright-orange);
+    border-radius: 5px 5px 0px 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.first-div img{
+    margin: 35px 160px 20px 0px;
+    width: 24%;
+}
+
+.first-div button{
+    color: var(--Bright-orange);
+}
+
+.second-div{
+    width: 300px;
+    height: 350px;
+    background-color: var(--Dark-cyan);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.second-div img{
+    margin: 33px 150px 20px 0px;
+    width: 23%;
+}
+
+.second-div button{
+    color: var(--Dark-cyan);
+}
+
+.second-div h1{
+    margin-right: 20px;
+    margin-top: -5px;
+}
+
+.second-div p{
+    margin-top: 5px;
+    margin-bottom: -5px;
+}
+
+.third-div{
+    width: 300px;
+    height: 360px;
+    background-color: var(--Very-dark-cyan);
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 0px 0px 5px 5px;
+    margin-bottom: 70px;
+}
+
+.third-div img{
+    margin: 30px 150px 20px 0px;
+    width: 24%;
+}
+
+.third-div h1{
+    margin-bottom: 5px;
+}
+
+.third-div button{
+    color: var(--Very-dark-cyan);
+}
+
+/*Active buttons*/
+
+.main-container button:active{
+    cursor: pointer;
+    color: var(--Very-light-gray-background-headings-buttons);
+    border: 2px solid var(--Very-light-gray-background-headings-buttons);
+}
+
+.first-div button:active{
+    background: var(--Bright-orange);
+}
+
+.second-div button:active{
+    background: var(--Dark-cyan)
+}
+
+.third-div button:active{
+    background: var(--Very-dark-cyan);
+}
+
+@media only screen and (min-width: 1140px){
+
+    .section-container div{
+        display: table-cell;
+        height: 240px;
+    }
+
+    .main-container {
+        background: var(--Very-light-gray-background-headings-buttons);
+    }
+
+    .first-div {
+        border-radius: 7px 0px 0px 7px;
+    }
+
+    .third-div {
+        border-radius: 0px 7px 7px 0px;
+    }
+
+    .first-div h1{
+        margin-top: -5px;
+    }
+
+    .third-div h1{
+        margin-top: -5px;
+    }
+
+    .main-container button{
+        margin-bottom: 50px;
+    }
+
+    .main-container img{
+        margin-bottom: 35px;
+        width: 26%;
+    }
+
+    .main-container h1{
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .main-container p{
+        font-size: 16px;
+    }
+
+    .first-div p{
+        margin-left: -5px;
+        line-height: 22px;
+    }
+}
