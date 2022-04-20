@@ -22,9 +22,11 @@
     box-sizing: border-box;
 }
 
-html{
+
+body{
     max-width: 100%;
     overflow-x: hidden;
+    min-height: 100vh
 }
 
 .main-container{
@@ -52,17 +54,18 @@ html{
     padding-left: 15px;
     padding-top: 25px;
     text-align: left;
+    padding-bottom: 40px;
 }
 
-.main-container button{
-    height: 40px;
-    width: 120px;
-    border-radius: 20px;
-    border: none;
+.main-container a{
+    border-radius: 30px;
     background: var(--Very-light-gray-background-headings-buttons);
     font-family: var(--font-Lexend-Deca);
     margin-right: 100px;
-    margin-top: 30px;
+    text-decoration: none;
+    border: solid 10px var(--Very-light-gray-background-headings-buttons);
+    font-size: 13px;
+    padding: 2px 13px 2px 13px;
 }
 
 .first-div{
@@ -80,7 +83,7 @@ html{
     width: 24%;
 }
 
-.first-div button{
+.first-div a{
     color: var(--Bright-orange);
 }
 
@@ -97,7 +100,7 @@ html{
     width: 23%;
 }
 
-.second-div button{
+.second-div a{
     color: var(--Dark-cyan);
 }
 
@@ -130,35 +133,43 @@ html{
     margin-bottom: 5px;
 }
 
-.third-div button{
+.third-div a{
     color: var(--Very-dark-cyan);
 }
 
 /*Active buttons*/
 
-.main-container button:active{
+.main-container a:active{
     cursor: pointer;
     color: var(--Very-light-gray-background-headings-buttons);
-    border: 2px solid var(--Very-light-gray-background-headings-buttons);
 }
 
-.first-div button:active{
-    background: var(--Bright-orange);
+.first-div a:active{
+    background-color: var(--Bright-orange);
+    border: 10px solid var(--Bright-orange);
+    color: white;
+    outline: 2px solid var(--Very-light-gray-background-headings-buttons);
 }
 
-.second-div button:active{
-    background: var(--Dark-cyan)
+.second-div a:active{
+    background-color: var(--Dark-cyan);
+    border: 10px solid var(--Dark-cyan);
+    color: white;
+    outline: 2px solid var(--Very-light-gray-background-headings-buttons);
 }
 
-.third-div button:active{
-    background: var(--Very-dark-cyan);
+.third-div a:active{
+    background-color: var(--Very-dark-cyan);
+    border: 10px solid var(--Very-dark-cyan);
+    color: white;
+    outline: 2px solid var(--Very-light-gray-background-headings-buttons);
 }
 
 @media only screen and (min-width: 1140px){
 
     .section-container div{
         display: table-cell;
-        height: 240px;
+        padding-bottom: 60px;
     }
 
     .main-container {
@@ -181,10 +192,6 @@ html{
         margin-top: -5px;
     }
 
-    .main-container button{
-        margin-bottom: 50px;
-    }
-
     .main-container img{
         margin-bottom: 35px;
         width: 26%;
@@ -202,5 +209,16 @@ html{
     .first-div p{
         margin-left: -5px;
         line-height: 22px;
+        margin-bottom: -3px;
     }
+
+    .second-div p{
+        margin-bottom: 7px;
+    }
+
+    .third-div p{
+        margin-bottom: 7px;
+    }
+
+
 }

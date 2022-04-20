@@ -54,3 +54,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 
 ## Acknowledgments
+
+*Final styling approach:
+
+- Frontend Mentor - [@vanzasetia](https://www.frontendmentor.io/profile/vanzasetia)
