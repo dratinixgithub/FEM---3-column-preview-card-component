@@ -49,7 +49,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ## Author
 
-- Website - [Kimue](https://dratinixgithub.github.io/FEM---qr-code-component/)
+- Website - [Kimue](https://dratinixgithub.github.io/FEM---3-column-preview-card-component//)
 - Frontend Mentor - [@dratinixgithub](https://www.frontendmentor.io/profile/dratinixgithub)
 
 
